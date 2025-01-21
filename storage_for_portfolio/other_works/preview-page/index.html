@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang='en'>
+      <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        
+        <link rel='stylesheet' href='assets/css/style.css'>
+
+
+          <title>Document</title>
+        </head>
+
+        <style>
+          body{
+            margin: 0;
+            padding: 0;
+            
+          }
+          a{
+            color: #000000;
+            text-decoration: none;
+          }
+          button{
+            background-color: transparent;
+            border-radius: 0;
+            border: none;
+            color: #000000;
+            user-select: none;
+          }
+          main{
+            min-width: 100vw;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+            background-image: url(./img/bg.jpg);
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+
+          }
+          @font-face {
+            font-family: "ft-glitch";
+            src: url(./font/CFGlitchCity-Regular.ttf);
+          }
+          .logo{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+          
+          .ubuntu {
+            width: 800px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #ffffff;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto; 
+          }
+          .www{
+            opacity: 0.6;
+            width: 800px;
+            text-align: center;
+            font-size: 24px;
+            
+            color: #ffffff;
+          }
+          .www-w{
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 24px;
+            color: #ffffff;
+            opacity: 1;
+          }
+          .block-ft-glitch{
+            width: 100%;
+            text-align: center;
+            margin-top: 40px;
+
+          }
+          .ft-glitch{
+            font-family: "ft-glitch";
+            font-size: 24px;
+            color: aqua;
+            
+          }
+          .ft-glitch>span{
+            font-family: 'Courier New', Courier, monospace;
+          }
+          @media (max-width:800px) {
+            
+            .logo_inner{
+              max-width: 500px;
+            } 
+            .www{
+              width: 500px;
+              font-size: 16px;
+            }
+            .www-w{
+              font-size: 16px;
+            }
+            .ubuntu {
+              width: 500px;
+            }
+          }
+          @media (max-width:505px) {
+            main{
+              background-size: 150%;
+            }
+            .logo_inner{
+              max-width: 310px;
+            } 
+            .www{
+              width: 310px;
+              font-size: 10px;
+            }
+            .www-w{
+              font-size: 10px;
+            }
+            .ubuntu {
+              width: 310px;
+            }
+            .block-ft-glitch{
+              margin-top: 10px;
+            }
+            .ft-glitch{
+            font-size: 16px;
+
+          }
+          }
+
+        </style>
+  <body>
+    <main>
+
+      <div>
+
+        <div class="logo">
+          <img class="logo" src="./img/logo.svg" alt="logo">
+        </div>
+
+          <div class="ubuntu">
+            <span class="www">Social media may have redefined reality, but we’re here to bring it back down to earth.</span>
+            <span class="www-w">Ready to do good, earn well, and keep it real?</span>
+          </div>
+          
+          <br>
+          <br>
+          <div class="ubuntu www">
+            Send us your ideas at:
+          </div>
+          <div class="block-ft-glitch">
+            <a class="ft-glitch" href="mailto:social@never2much.space.">SOCIAL@NEVER2MUCH<span>.</span>SPACE</a>
+          </div>
+      </div>
+
+    </main>
+  </body>
+</html>

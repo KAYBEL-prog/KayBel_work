@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang='en'>
+      <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+				<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel='stylesheet' href='../assets/css/header.css'>
+        <link rel='stylesheet' href='../assets/css/footer.css'>
+
+          <title>getcourse - catalog</title>
+        </head>
+        <style>
+            .wrapper-container {
+              width: 100%;
+              position: relative;
+              padding-bottom: 40px;
+              background: #fff;
+            }
+            .block-cooperation{
+                height: 800px;
+                display: grid;
+                grid-template-rows: repeat(3, minmax(0, 1fr));
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                background-image: url(https://fs.getcourse.ru/fileservice/file/download/a/823955/sc/405/h/f96acf45e8c4b38d2986cbf3e4baaf77.png);
+                background-repeat: no-repeat;
+                background-position: bottom ;
+                background-size: 100%;
+            }
+            .block-cooperation__left {
+                align-self: center;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .block-cooperation__left .block-cooperation__left-title{
+                font-size: 40px;
+            }
+            .block-cooperation__middle {
+                grid-column: span 2 / span 2;
+                max-width: 500px;
+                align-self: center;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .block-cooperation__middle .block-cooperation__middle-description{
+                font-size: 20px;
+            }
+            .block-cooperation__right {
+                align-self: center;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .block-cooperation__right .block-cooperation__right-text{
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 50px;
+            }
+            .block-cooperation__right-inner__link{
+                width: 100%;
+                display: flex;
+            }
+            .block-cooperation__right .block-cooperation__right-link{
+                padding: 10px 30px 10px 30px;
+                border-radius: 999px;
+                background-color: #C4A730;
+                font-weight: 600;
+            }
+            @media (max-width:1024px) {
+                .block-cooperation{
+                    height: 800px;
+                    display: grid;
+                    grid-template-rows: repeat(3, minmax(0, 1fr));
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    background-image: url(https://fs.getcourse.ru/fileservice/file/download/a/823955/sc/405/h/f96acf45e8c4b38d2986cbf3e4baaf77.png);
+                    background-repeat: no-repeat;
+                    background-position: left bottom ;
+                    background-size: 150%;
+                }
+                .block-cooperation__middle {
+                    grid-column: span 1 / span 1;
+                    max-width: 500px;
+                    align-self: center;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+            @media (max-width:700px) {
+                .block-cooperation__right .block-cooperation__right-text{
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin-bottom: 50px;
+                    text-align: center;
+                }
+                .block-cooperation__right-inner__link{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+                .block-cooperation__right .block-cooperation__right-inner__link .block-cooperation__right-link{
+                    padding: 10px 30px 10px 30px;
+                    border-radius: 999px;
+                    background-color: #C4A730;
+                    font-weight: 600;
+                    
+                }
+                .block-cooperation__middle .block-cooperation__middle-description{
+                    font-size: 20px;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .block-cooperation__left .block-cooperation__left-title{
+                    font-size: 30px;
+                    text-align: center;
+                }
+                .block-cooperation{
+                    height: 800px;
+                    display: grid;
+                    grid-template-rows: repeat(3, minmax(0, 1fr));
+                    grid-template-columns: repeat(1, minmax(0, 1fr));
+                    background-image:none;
+                    background-repeat: no-repeat;
+                    background-position: left bottom ;
+                    background-size: 300%;
+                }
+                .block-cooperation__middle {
+                    grid-column: span 1 / span 1;
+                    max-width: 500px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    align-self: center;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        </style>
+  <body>  
+    <header>
+      <div class="header-container container">
+          <div class="header">
+              <div class="header-logo">
+                  <a href="/">
+                      <img src="../assets/img/Logo.svg" alt="logo">
+                  </a>
+              </div>
+              <button class="header-menu" type="button">
+                  <img src="../assets/img/Menu_logo.svg" alt="burger">
+                  <span>Все курсы</span>
+              </button>
+              <a class="header-mail" href="mailto:budovskydoctor@mail.ru">
+                  <img src="../assets/img/Mail.svg" alt="email">
+                  <span>budovskydoctor@mail.ru</span>
+              </a>
+              <div class="header-fixed">
+                  <nav class="header-nav">
+                      <ul class="header-nav-list">
+                          <li><a href>Главная</a></li>
+                          <li><a href>Расписание</a></li>
+                          <li><a href>О нас</a></li>
+                          <li><a href>Рейтинг</a></li>
+                          <li><a href>Контакты</a></li>
+                      </ul>
+                  </nav>
+                  <div class="header-callback" tabindex="0">
+                      <a class="header-callback-phone"
+                          href="tel:+78126123606">
+                          <span class="header-callback-phone-pict"><img
+                                  src="../assets/img/Phone.svg"
+                                  alt="phone"></span>
+                          <span>+7 (812) 612-36-06</span>
+                          <span class="header-callback-phone-angel"><img
+                                  src="../assets/img/Arrow.svg" alt="phone"></span>
+                      </a>
+                      <div class="header-callback-modal">
+                          <a class="header-callback-modal-phone"
+                              href="tel:+78126123606">
+                              <span
+                                  class="header-callback-modal-phone-pict"><img
+                                      src="../assets/img/Phone.svg"
+                                      alt="phone"></span>
+                              <span>+7 (812) 612-36-06</span>
+                          </a>
+                          <button class="header-callback-modal-button"
+                              type="button">Заказать обратный
+                              звонок</button>
+                      </div>
+                  </div>
+                  <a class="header-account" href="/">
+                      <img src="../assets/img/Person.svg" alt="account">
+                      <span>Личный кабинет</span>
+                  </a>
+                  <button class="header-fixed-close"
+                      type="button">×</button>
+              </div>
+              <button class="header-burger" type="button">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </button>
+          </div>
+      </div>
+    </header>	
+					
+
+    <main>
+        <section>
+            <div class="wrapper-container container">
+                <div class="block-cooperation">
+                    <div class="block-cooperation__left">
+                        <h1 class="block-cooperation__left-title">Сотрудничество</h1>
+                    </div>
+                    <div class="block-cooperation__middle">
+                        <p class="block-cooperation__middle-description">
+                            Приглашаем Вас не только воспользоваться мощными 
+                            и интереснейшими инструментами нашего сайта, 
+                            но и развиваться, расти и создавать новые креативные проекты и мероприятия вместе.
+                        </p>
+                    </div>
+                    <div class="block-cooperation__right">
+                        <p class="block-cooperation__right-text">
+                            Для этого мы разработали 
+                            совершенно новые модели 
+                            сотрудничества и кооперации
+                        </p>
+                        <div class="block-cooperation__right-inner__link">
+                            <a class="block-cooperation__right-link" href="#">Подробнее</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>	
+    </main>
+
+    <footer>
+			<div class="footer-container container">
+				<div class="footer">
+					<ul class="footer-block">
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href>Главная</a>
+						</li>
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href>О нас</a>
+						</li>
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href>Рейтинг</a>
+						</li>
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href>Расписание</a>
+						</li>
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href>Интернет-магазин</a>
+						</li>
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href>Контакты</a>
+						</li>
+					</ul>
+					<ul class="footer-block">
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href>Отзывы</a>
+						</li>
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href>Поддержка</a>
+						</li>
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href>Сотрудничество</a>
+						</li>
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href>Гарантии</a>
+						</li>
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href>Доставка</a>
+						</li>
+					</ul>
+					<ul class="footer-block">
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href="mailto:budovskydoctor@mail.ru">
+								<img src="../assets/img/F_M.svg" alt="email">
+								<span>budovskydoctor@mail.ru</span>
+							</a>
+						</li>
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href="tel:+78126123606">
+								<img src="../assets/img/F_P.svg">
+								<span>+7 (812) 612-36-06</span>
+							</a>
+						</li>
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href="tel:+78126123606">
+								<img src="../assets/img/F_P.svg">
+								<span>+7 (812) 612-36-06</span>
+							</a>
+						</li>
+						<li class="footer-block-item">
+							<img src="../assets/img/place_white.png" alt="place">
+							<span>190005, Россия, Санкт-Петербург,
+								<br>пр. Московский 37/1, Стоматология
+								<br>доктора Будовского</span>
+						</li>
+					</ul>
+					<ul class="footer-block">
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href>Возврат денежных средств</a>
+						</li>
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href>Пользовательское соглашение</a>
+						</li>
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href>Договор оферты</a>
+						</li>
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href>Политика конфиденциальности</a>
+						</li>
+						<li class="footer-block-item">
+							<a class="footer-block-item-link" href>Использования cookie</a>
+						</li>
+					</ul>
+					<ul class="footer-block footer-social">
+						<li class="footer-social-item">
+							<a class="footer-social-item-link" href>
+								<img src="../assets/img/F_TG.svg" alt="telegram">
+							</a>
+						</li>
+						<li class="footer-social-item">
+							<a class="footer-social-item-link" href>
+								<img src="../assets/img/F_VK.svg" alt="vkontakte">
+							</a>
+						</li>
+						<li class="footer-social-item">
+							<a class="footer-social-item-link" href>
+								<img src="../assets/img/F_Y.svg" alt="youtube">
+							</a>
+						</li>
+					</ul>
+					<p class="footer-copyrite">© 2024. Копирайты. Все права защищены.</p>
+				</div>
+			</div>
+	</footer>
+	
+  </body>
+
+</html>

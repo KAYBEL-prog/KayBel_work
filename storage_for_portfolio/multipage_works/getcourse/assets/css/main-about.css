@@ -1,0 +1,343 @@
+
+/* hero */
+.pages_inner{
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.pages_inner img{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.pages_inner .pages_text{
+  opacity: 0.5;
+  font-weight: 300;
+  font-size: 16px;
+  text-wrap: nowrap;
+}
+.pages_text{
+  color: #292929;
+}
+.pages_inner .pages_text svg{ 
+  opacity: 0.5;
+}
+@media (max-width: 480px) {
+  .pages_inner .pages_text{
+    opacity: 0.5;
+    font-weight: 300;
+    font-size: 12px;
+  }
+}
+
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  margin-bottom: 100px;
+  padding-bottom: 37px;
+  width: 100%;
+}
+
+.hero-top {
+  position: relative;
+  z-index: 2;
+  grid-area: 1 / 1 / 2 / 3;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 37px;
+}
+
+.hero-top-title {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 100%;
+  color: var(--1);
+  white-space: nowrap;
+}
+
+.hero-top-description {
+  display: block;
+  max-width: 324px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--1);
+}
+
+
+@media (max-width: 1024px) {
+
+  /* hero */
+  .hero-top-title {
+      font-size: 50px;
+  }
+
+  .hero-top-description {
+      max-width: 290px;
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  /* hero */
+  .hero {
+      grid-template-columns: 45% 10% 45%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .hero {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      grid-template-rows: repeat(3, auto);
+      grid-column-gap: 0;
+      grid-row-gap: 0;
+  }
+
+  .hero-top {
+      grid-area: 1 / 1 / 2 / 4;
+  }
+
+  .hero-top-title {
+      font-size: 50px !important;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .hero {
+      display: flex;
+      flex-direction: column;
+  }
+  .hero-top-title {
+    font-size: 50px !important;
+  }
+}
+@media (max-width: 480px) {
+  .hero-top a img{
+    max-width: 30px;
+  }
+  .hero-top-title {
+    font-size: 30px !important;
+    margin-left: 15px;
+
+  }
+  .pages_inner .pages_text{
+    opacity: 0.5;
+    font-weight: 300;
+    font-size: 12px;
+  }
+}
+
+/* courses */
+.courses-container {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 83px;
+  background: #ffffff;
+}
+
+.courses-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 100vw;
+  height: 100%;
+  background: #ffffff;
+  transform: translateX(-50%);
+}
+
+.courses {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+
+.courses-slider {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(auto, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.courses-slider .slick-slide {
+  padding: 0 16px 30px 16px;
+}
+
+.course {
+  min-width: 300px;
+  max-width: 320px;
+  max-height: 610px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  position: relative;
+  width: auto;
+  transition: 0.3s ;
+
+  background-color: #F9F1E7;
+  border-radius: 40px;
+  overflow: hidden;
+  /* box-shadow: 4px 10px 10px 6px #dedede; */
+}
+.contact_wrapper {
+}
+.hero_block {
+  display: grid;
+  grid-template-rows: repeat(auto, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hero_block_col-img {
+  width: 100%;
+  height: 480px;
+
+  border-radius: 40px;
+
+  /* background-image: url(https://fs.getcourse.ru/fileservice/file/download/a/823955/sc/129/h/2741bba97ca845a8210ed4a5c21f1427.jpg); */
+  background-image: url(../img/about-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero_block_col-info {
+  width: 100%;
+}
+.hero_block_col-info_title {
+  max-width: 500px;
+  font-weight: 700;
+  font-size: 38px;
+  color: #292929;
+}
+.hero_block_col-info_contact-items {
+  max-width: 1000px;
+  min-width: 150px;
+  margin: 0;
+  
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.hero_block_col-info_contact__item {
+  min-width: 250px;
+  min-height: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+  border-radius: 30px;
+  border: 1px solid rgb(41, 41, 41,0.2);
+  /* overflow: hidden; */
+}
+
+.hero_block_col-info_contact__item-inner{
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+
+}
+
+.title_icon {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  border: 1px rgb(41, 41, 41,0.2);
+  border-bottom-style: solid;
+}
+
+.hero_block_col-info_contact__item .number a{
+  display: block;
+  padding-top: 5px;
+  font-size: 16px;
+}
+.hero_block_col-info_contact__item .number p{
+  display: block;
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+@media (max-width:1131px) {
+  .hero_block {
+    display: grid;
+    grid-template-rows: repeat(auto, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .hero_block_col-img {
+    width: 100%;
+    height: 480px;
+    margin-top: 20px;
+    border-radius: 40px;
+    background-image: url(../img/about-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero_block_col-info_contact-items {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  .hero_block_col-info_title{
+    font-size: 24px;
+  }
+
+}
+@media (max-width:620px) {
+  .hero_block_col-img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.main_block{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.main_block-instruction{margin-top: 50px;}
+.main_block-instruction .title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.main_block-instruction .title img {
+  width: 35px;
+  height: 25px;
+  margin-right: 20px;
+}
+.block_bus .title img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.main_block-instruction .title h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.main_block-instruction .description{
+  margin-top: 20px;
+  max-width: 1000px;
+  min-width: 0px;
+  font-size: 18px;
+  font-weight:lighter;
+}
+@media (max-width:768px) {
+  .main_block-instruction .title h3 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .main_block .img-big-logo{
+    display: none;
+  }
+  
+}
